@@ -1,0 +1,72 @@
+/*Main html*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../img/charlesdeluvio-j47zV8LCE7M-unsplash.jpg");
+  background-size:cover;
+  
+  
+
+}
+
+h1{
+  font-size: 2.5rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  
+  
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+
+}
+.container{
+  justify-content: center;
+  color: black;
+  font-size: 1.2rem;
+  
+    
+}
+.container,ul{
+  padding-left: 55rem;
+  padding-top: 3rem;
+
+}
+.main-nav{
+ padding-bottom: 2rem;
+ width: max-content;
+
+}
+button{
+  
+  background-color: black;
+  padding: 10px 10px;
+  
+}
+
+/*form CSS*/
+ 
+
+.form-row .form-group {
+  margin: 15px 0px;
+}
+
+.submit-message {
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  
+}
