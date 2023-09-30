@@ -1,14 +1,28 @@
+<?php
+require_once('database.php');
+$res = $database->read();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/view.css">
+	<title>Assignment 1</title>
 </head>
+
 <body>
 
 	<div class="container">
 		<div class="row">
+			<?php
+			include_once 'crud.php';
+			$crud = new crud();
+			$query = 'SELECT * FROM Assignment1';
+			$result = $crud->getData($query);
+			?>
 			<table class="table">
 				<tr>
 					<th>First Name</th>
@@ -19,21 +33,23 @@
 					<th>Payment</th>
 				</tr>
 				<?php
-				while ($r = mysqli_fetch_assoc($res)) {
-				?>
-					<tr>
-						<td><?php echo $r['fname'] . " " . $r['lname']; ?> </td>
-						<td><?php echo $r['address']; ?></td>
-						<td><?php echo $r['mobile']; ?></td>
-						<td><?php echo $r['email']; ?></td>
-						<td><?php echo $r['payment']; ?></td>
-					</tr>
-				<?php
+
+				foreach ($result as $key => $res) {
+					echo "<tr>";
+					echo "<td>" . $res['fname'] . "</td>";
+					echo "<td>" . $res['lname'] . "</td>";
+					echo "<td>" . $res['address'] . "</td>";
+					echo "<td>" . $res['mobile'] . "</td>";
+					echo "<td>" . $res['email'] . "</td>";
+					echo "<td>" . $res['payment'] . "</td>"	;	
+					echo "</tr>";
 				}
 				?>
+
 			</table>
 		</div>
 	</div>
 
 </body>
+
 </html>

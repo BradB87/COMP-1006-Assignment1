@@ -1,72 +1,120 @@
 /*Main html*/
 
-*{
+* {
+  box-sizing: border-box;
+
+}
+
+html,
+body,
+main {
   margin: 0;
   padding: 0;
-}
 
-html {
-  background-image: url("../img/charlesdeluvio-j47zV8LCE7M-unsplash.jpg");
-  background-size:cover;
-  
-  
+  background-image: url("/img/the-nix-company-ljvm17bH-e0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+
 
 }
 
-h1{
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  justify-items: center;
+  background-color: burlywood;
+}
+
+
+h1 {
+  height: 3rem;
+  width: 100%;
   font-size: 2.5rem;
-  background-color: black;
-  color: #fff;
+  background-color: brown;
+  color: burlywood;
   text-align: center;
   justify-content: center;
-  
-  
+  border: 5px solid burlywood;
+  margin: 2px;
+
 }
-h3,
-h4,
-h5,
-h6 {
+
+h2 {
+  font-size: 1.5rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   justify-content: center;
-  color: white;
-  background-color: black;
+  color: burlywood;
+  background-color: brown;
+}
 
+body {
+  margin: 0;
 }
 .container{
+  display: flex;
   justify-content: center;
+}
+form.form1 {
+  height: fit-content;
+  width: max-content;
+  border: 3px solid brown;
   color: black;
-  font-size: 1.2rem;
-  
-    
-}
-.container,ul{
-  padding-left: 55rem;
-  padding-top: 3rem;
+  font-size: 1rem;
+  background-color: burlywood;
+  padding: 30px 30px;
 
 }
-.main-nav{
- padding-bottom: 2rem;
- width: max-content;
 
-}
-button{
+div {
+  margin-bottom: 2px;
+  background-color: brown;
   
-  background-color: black;
+}
+
+label {
   padding: 10px 10px;
-  
+  color: burlywood;
+}
+
+.submit-button {
+  display: flexbox;
+  justify-items: center;
+  background-color: brown;
+  color: burlywood;
+  padding: 5px 5px;
+  margin-top: 8px;
+
+}
+
+footer.button {
+  color: burlywood;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: brown;
+  border: 3px solid burlywood;
+
 }
 
 /*form CSS*/
- 
 
-.form-row .form-group {
-  margin: 15px 0px;
-}
 
 .submit-message {
   padding: 1em;
   text-align: center;
   color: #fff;
-  
+
 }
