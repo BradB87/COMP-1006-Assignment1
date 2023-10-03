@@ -1,4 +1,4 @@
-/*Main html*/
+/*General styling*/
 
 * {
   box-sizing: border-box;
@@ -10,13 +10,11 @@ body,
 main {
   margin: 0;
   padding: 0;
-
   background-image: url("/img/the-nix-company-ljvm17bH-e0-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
-
-
 }
+
+/*Layout*/
 
 body {
   height: 100vh;
@@ -29,13 +27,14 @@ div {
 }
 
 header {
+  margin-bottom: 1em;
   justify-items: center;
   background-color: burlywood;
 }
 
 
 h1 {
-  height: 3rem;
+  
   width: 100%;
   font-size: 2.5rem;
   background-color: brown;
@@ -49,55 +48,87 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
-  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
   color: burlywood;
   background-color: brown;
 }
-
-body {
-  margin: 0;
+h3{
+  text-align: center;
+  background-color: brown;
 }
-.container{
+
+/*form 1*/
+.container {
   display: flex;
   justify-content: center;
+  height: 300px;
+  width: 600px;
+  margin-left: 35%;
+  margin-right: 35%;
 }
+
 form.form1 {
   height: fit-content;
-  width: max-content;
+  width: 250px;
   border: 3px solid brown;
   color: black;
   font-size: 1rem;
   background-color: burlywood;
-  padding: 30px 30px;
 
 }
+/*form 2*/
+form.form2{
+  height:fit-content;
+  width: 250px;
+  background-color: burlywood;
+  border: 3px solid brown;
+  color: burlywood;
+  margin-top: 8%;
 
+}
+.container2{
+  display: flex;
+  justify-content: center; 
+
+}
 div {
+  padding: 2px 2px;
   margin-bottom: 2px;
   background-color: brown;
-  
+
 }
 
 label {
-  padding: 10px 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  padding: 60px 60px;
   color: burlywood;
 }
+select, option{
+  width: 200px;
+
+}
+  
 
 .submit-button {
   display: flexbox;
-  justify-items: center;
+  height: 50px ;
+  width: 80px; ;
   background-color: brown;
   color: burlywood;
-  padding: 5px 5px;
-  margin-top: 8px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 25%;
 
 }
+.submit-message {
+  padding: 1em;
+  text-align: center;
+  color: #fff;
 
-footer.button {
-  color: burlywood;
 }
+/*footer*/
 
 footer {
   position: absolute;
@@ -109,12 +140,9 @@ footer {
 
 }
 
-/*form CSS*/
 
 
-.submit-message {
-  padding: 1em;
-  text-align: center;
-  color: #fff;
 
-}
+
+
+

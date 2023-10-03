@@ -22,39 +22,86 @@
             <form method="post" class=" form1">
                 <h2> Place Order</h2>
                 <div class="#">
-                    <label for="fname">First Name</label><br>
+                    <label for="fname">First Name:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Buzz" required />
 
                 </div>
                 <div class="#">
 
-                    <label for="lname">Last Name</label><br>
+                    <label for="lname">Last Name:</label><br>
                     <input type="text" id="lname" name="lname" placeholder="Lightyear" required /><br>
                 </div>
                 <div class="#">
-                    <label for="address">Address</label><br>
+                    <label for="address">Address:</label><br>
                     <input type="text" id="address" name="address" placeholder="164 homeland road"><br>
 
                 </div>
                 <div class="#">
-                    <label for="mobile">Mobile</label><br>
+                    <label for="mobile">Mobile:</label><br>
                     <input type="tel" id="mobile" name="mobile" placeholder="555-555-5555" required><br>
 
                 </div>
                 <div class="#">
-                    <label for="email" class="email">Email</label><br>
+                    <label for="email" class="email">Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="toinfintyandbeyond@hotmail.ca"
                         required><br>
                 </div>
                 <div class="#">
-                    <label for="payment">Payment</label>
+                    <label for="payment">Payment:</label><br>
                     <select name="payment" id="payment">
-                    <option value="Mastercard">Mastercard</option>
-                    <option value="Visa">Visa</option>
-                    <option value="American Express">American express</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="American Express">American express</option>
                     </select>
                 </div>
                 <input type="submit" class="submit-button" accept="" value="Submit"><br>
+
+            </form>
+
+        </section>
+        <section class="container2">
+            <form action="post" class="form2">
+                <h3>Pizza selection</h3>
+
+                <div class="pizzasel">
+                    <label for="choice">choice</label><br>
+                    <select id="pizzatop">
+                        <option value="bacon">Bacon</option>
+                        <option value="mushroom">Mushrooms</option>
+                        <option value="green peppers">Green peppers</option>
+                        <option value="peperoni">Peperoni</option>
+                    </select>
+                </div>
+                <div class="pizzasel">
+                    <label for="choice">choice</label><br>
+                    <select id="choice">
+                        <option value="green peppers">Green peppers</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="peperoni">Peperoni</option>
+                        <option value="onion">Onion</option>
+                    </select>
+                </div>
+
+                </div>
+                <div class="pizzatype">
+                    <label for="pizza type">Pizza type</label><br>
+                    <select id="pizzatype">
+                        <option value="thin crust">Thin crust</option>
+                        <option value="thick crust">Thick crust</option>
+                        <option value="pan style">Pan style</option>
+                    </select>
+                </div>
+                <div class="pizzasiz">
+                    <label for="pizza size">Pizza Size:</label><br>
+                    <select id="pizzasiz">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value=" xl large"> XL Large</option>
+                    </select>
+                </div>
+
 
             </form>
         </section>
@@ -63,11 +110,9 @@
 
     </main>
     <footer>
-        <div class="button">
-            <nav class="main-nav">
-                <button><a href="../view.php">View</a></button>
-            </nav>
-        </div>
+
+       
+       
     </footer>
 
 </body>

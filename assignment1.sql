@@ -14,3 +14,5 @@ VALUES
 ('Elvis', 'Presley', '136 Rock st','705-543-5463', 'Epresley@mail.com', 'Mastercard'),
 ('Freddy', 'Mercury', ' 50 Queen st','705-549-2786', 'queen_1@mail.com', 'American Express'),
 ('Rodger', 'Keith', ' 54  Wallstreet st','705-543-6925', 'pfloyd@mail.com', 'Visa');
+
+

@@ -1,13 +1,11 @@
 <?php
     require_once'database.php';
     //This class is an extension of our database class and will execute out database queries.
-    //c
     class crud extends database{
         public function __construct(){
             parent::__construct(); 
             
         }
-        // read
         public function getData(){
             $result = $this->connection->query($query);
             if($result == false){
@@ -33,5 +31,3 @@
             return $this->connection->real_escape_string($value);
         }
     }
-
-?>

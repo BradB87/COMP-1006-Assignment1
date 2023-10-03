@@ -7,7 +7,7 @@
         protected $connection;
         public function __construct(){
             if(!isset($this->connection)){
-                $this->connection = new mysqli($this->host, $this->password, $this->database);
+                $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
                 if(!$this->connection){
                     echo "<p>Cannot connect to database</p>";
                     exit;

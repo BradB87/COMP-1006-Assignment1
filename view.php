@@ -1,8 +1,3 @@
-<?php
-require_once('database.php');
-$res = $database->read();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +36,7 @@ $res = $database->read();
 					echo "<td>" . $res['address'] . "</td>";
 					echo "<td>" . $res['mobile'] . "</td>";
 					echo "<td>" . $res['email'] . "</td>";
-					echo "<td>" . $res['payment'] . "</td>"	;	
+					echo "<td>" . $res['payment'] . "</td>";
 					echo "</tr>";
 				}
 				?>
