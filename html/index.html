@@ -49,9 +49,9 @@
                 <div class="#">
                     <label for="payment">Payment:</label><br>
                     <select name="payment" id="payment">
-                        <option value="Mastercard">Mastercard</option>
-                        <option value="Visa">Visa</option>
-                        <option value="American Express">American express</option>
+                        <option label="Mastercard">Mastercard</option>
+                        <option label="Visa">Visa</option>
+                        <option label="American Express">American express</option>
                     </select>
                 </div>
                 <input type="submit" class="submit-button" accept="" value="Submit"><br>
@@ -60,21 +60,22 @@
 
         </section>
         <section class="container2">
-            <form action="post" class="form2">
-                <h3>Pizza selection</h3>
 
-                <div class="pizzasel">
-                    <label for="choice">choice</label><br>
-                    <select id="pizzatop">
+            <form method="post" class="form2">
+                
+                
+                <div class="pizzaSel">
+                    <label for ="choice">Choice 1</label><br>
+                    <select name="pizzaTop" id="pizzaTop">
                         <option value="bacon">Bacon</option>
                         <option value="mushroom">Mushrooms</option>
                         <option value="green peppers">Green peppers</option>
                         <option value="peperoni">Peperoni</option>
                     </select>
                 </div>
-                <div class="pizzasel">
-                    <label for="choice">choice</label><br>
-                    <select id="choice">
+                <div class="pizzaSel">
+                    <label for="choice">Choice 2</label><br>
+                    <select name="pizzaTop" id="pizzaTop">
                         <option value="green peppers">Green peppers</option>
                         <option value="bacon">Bacon</option>
                         <option value="mushrooms">Mushrooms</option>
@@ -84,17 +85,17 @@
                 </div>
 
                 </div>
-                <div class="pizzatype">
-                    <label for="pizza type">Pizza type</label><br>
-                    <select id="pizzatype">
+                <div class="pizzaSel">
+                    <label for="pizzaType">Pizza Type</label><br>
+                    <select name="pizzaType" id="pizzaType">
                         <option value="thin crust">Thin crust</option>
                         <option value="thick crust">Thick crust</option>
                         <option value="pan style">Pan style</option>
                     </select>
                 </div>
-                <div class="pizzasiz">
-                    <label for="pizza size">Pizza Size:</label><br>
-                    <select id="pizzasiz">
+                <div class="pizzaSel">
+                    <label for="pizzaSiz">Pizza Size:</label><br>
+                    <select name="pizzaSiz"id="pizzaSiz">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -110,9 +111,13 @@
 
     </main>
     <footer>
+        <div class="nav-button">
+        <nav id="view">
+            <a href="../view.php">View</a>
+        </nav>
+        </div>
 
-       
-       
+
     </footer>
 
 </body>

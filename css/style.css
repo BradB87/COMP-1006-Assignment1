@@ -34,7 +34,7 @@ header {
 
 
 h1 {
-  
+
   width: 100%;
   font-size: 2.5rem;
   background-color: brown;
@@ -53,7 +53,8 @@ h2 {
   color: burlywood;
   background-color: brown;
 }
-h3{
+
+h3 {
   text-align: center;
   background-color: brown;
 }
@@ -61,14 +62,16 @@ h3{
 /*form 1*/
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   height: 300px;
   width: 600px;
   margin-left: 35%;
   margin-right: 35%;
+  margin-top: 10%;
 }
 
 form.form1 {
+
   height: fit-content;
   width: 250px;
   border: 3px solid brown;
@@ -77,21 +80,27 @@ form.form1 {
   background-color: burlywood;
 
 }
+
 /*form 2*/
-form.form2{
-  height:fit-content;
-  width: 250px;
+form.form2 {
+  height: fit-content;
+  width: 230px;
   background-color: burlywood;
   border: 3px solid brown;
   color: burlywood;
-  margin-top: 8%;
+
+
 
 }
-.container2{
+
+.container2 {
   display: flex;
-  justify-content: center; 
+  justify-content: right;
+  padding-bottom: 80%;
+  margin-right: 30%;
 
 }
+
 div {
   padding: 2px 2px;
   margin-bottom: 2px;
@@ -105,16 +114,19 @@ label {
   padding: 60px 60px;
   color: burlywood;
 }
-select, option{
+
+select,
+option {
   width: 200px;
 
 }
-  
+
 
 .submit-button {
   display: flexbox;
-  height: 50px ;
-  width: 80px; ;
+  height: 50px;
+  width: 80px;
+  ;
   background-color: brown;
   color: burlywood;
   margin-top: 5%;
@@ -122,16 +134,18 @@ select, option{
   margin-left: 25%;
 
 }
+
 .submit-message {
   padding: 1em;
   text-align: center;
   color: #fff;
 
 }
-/*footer*/
+
+/*footer and url link*/
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 4rem;
@@ -140,9 +154,19 @@ footer {
 
 }
 
+.nav-button {
+  height: 40px;
+  display: flex;
+  color: brown;
+  justify-content: center;
+}
 
-
-
-
-
-
+nav#view {
+  margin-top: 10px;
+  height: 30px;
+  width: 40px;
+  padding-top: 3px;
+  justify-self: center;
+  background-color: burlywood;
+  color: brown;
+}
