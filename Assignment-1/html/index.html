@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+
+
+        <header>
+            <div>
+                <h1>Brad's Pizza</h1>
+            </div>
+        </header>
+
+        <section class="container">
+            <form method="post" class=" form1">
+                <h2> Place Order</h2>
+                <div class="#">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Buzz" required />
+
+                </div>
+                <div class="#">
+
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Lightyear" required /><br>
+                </div>
+                <div class="#">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" placeholder="164 homeland road"><br>
+
+                </div>
+                <div class="#">
+                    <label for="mobile">Mobile:</label><br>
+                    <input type="tel" id="mobile" name="mobile" placeholder="555-555-5555" required><br>
+
+                </div>
+                <div class="#">
+                    <label for="email" class="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="toinfintyandbeyond@hotmail.ca"
+                        required><br>
+                </div>
+                <div class="#">
+                    <label for="payment">Payment:</label><br>
+                    <select name="payment" id="payment">
+                        <option label="Mastercard">Mastercard</option>
+                        <option label="Visa">Visa</option>
+                        <option label="American Express">American express</option>
+                    </select>
+                </div>
+                <input type="submit" class="submit-button" accept="" value="Submit"><br>
+
+            </form>
+
+        </section>
+        <section class="container2">
+
+            <form method="post" class="form2">
+                
+                
+                <div class="pizzaSel">
+                    <label for ="choice">Choice 1</label><br>
+                    <select name="pizzaTop" id="pizzaTop">
+                        <option value="bacon">Bacon</option>
+                        <option value="mushroom">Mushrooms</option>
+                        <option value="green peppers">Green peppers</option>
+                        <option value="peperoni">Peperoni</option>
+                    </select>
+                </div>
+                <div class="pizzaSel">
+                    <label for="choice">Choice 2</label><br>
+                    <select name="pizzaTop" id="pizzaTop">
+                        <option value="green peppers">Green peppers</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="mushrooms">Mushrooms</option>
+                        <option value="peperoni">Peperoni</option>
+                        <option value="onion">Onion</option>
+                    </select>
+                </div>
+
+                </div>
+                <div class="pizzaSel">
+                    <label for="pizzaType">Pizza Type</label><br>
+                    <select name="pizzaType" id="pizzaType">
+                        <option value="thin crust">Thin crust</option>
+                        <option value="thick crust">Thick crust</option>
+                        <option value="pan style">Pan style</option>
+                    </select>
+                </div>
+                <div class="pizzaSel">
+                    <label for="pizzaSiz">Pizza Size:</label><br>
+                    <select name="pizzaSiz"id="pizzaSiz">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value=" xl large"> XL Large</option>
+                    </select>
+                </div>
+
+
+            </form>
+        </section>
+
+        </footer>
+
+    </main>
+    <footer>
+        <div class="nav-button">
+        <nav id="view">
+            <a href="../view.php">View</a>
+        </nav>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

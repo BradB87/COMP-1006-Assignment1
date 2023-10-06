@@ -1,0 +1,15 @@
+table{
+    width: 50%;
+}
+ table, tr, th{
+border: 1px solid black;
+
+}
+td{
+    text-align: left;
+}
+
+tr:nth-child(even) { 
+    background-color: #f2f2f2;
+
+}
